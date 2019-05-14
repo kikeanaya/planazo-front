@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/planazo-front/precache-manifest.b22c6348cfa9f5626d2334b1bbd9cf19.js"
+  "/planazo-front/precache-manifest.acfd596757c65406af49edbfeb2e700c.js"
 );
 
 workbox.clientsClaim();
