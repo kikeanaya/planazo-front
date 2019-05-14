@@ -30,7 +30,7 @@ class Navbar extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="app-title">PLANAZO</h1>
           </div>
-          <Link to='/'>
+          <Link to='/planazo-front/'>
             <button className="logout" onClick={() => this.logoutUser()}></button>
           </Link>
         </nav>
@@ -41,7 +41,7 @@ class Navbar extends Component {
       <nav className="nav-style">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="app-title">PLANAZO</h1>
-          <Link to='/login' className="login"></Link>
+          <Link to='/planazo-front/login' className="login"></Link>
       </nav>
     )
   }

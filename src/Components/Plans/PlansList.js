@@ -282,7 +282,6 @@ class PlansList extends Component {
                             this.state.plans.map(plan => <PlanCard key={plan._id} {...plan} refreshPlans={this.getAllPlans}/>)
                         }
                     </div>
-                    
                     <div>
                         <button onClick={this.openModal} className="open-sort-menu"></button>
                         <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyles}>

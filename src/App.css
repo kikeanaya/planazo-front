@@ -994,6 +994,11 @@ input[type=checkbox]:checked:disabled + label:before {
   background-repeat: no-repeat;
 }
 
+.view-alert{
+  display: none;
+}
+
+
 @media only screen and (min-width: 800px) {
   .plan-title{
     font-size: 1.5vw;
@@ -1045,5 +1050,15 @@ input[type=checkbox]:checked:disabled + label:before {
     right: 50%;
     width: 35px;
     height: 35px;
+  }
+  .view-alert{
+    display: block;
+    background-color: red;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 5px;
+    padding: 10px;
   }
 }

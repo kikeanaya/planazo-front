@@ -5,7 +5,7 @@ export default class services {
     constructor() {
 
         this.service = axios.create({
-            baseURL: 'https://planazo.herokuapp.com/api/',
+            baseURL: 'https://enigmatic-badlands-80779.herokuapp.com/api/',
             withCredentials: true
         })
     }

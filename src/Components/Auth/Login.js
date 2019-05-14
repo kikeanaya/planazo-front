@@ -21,7 +21,7 @@ class Login extends Component {
             password: "" 
         })
         this.props.setUser(response)
-        window.location.assign('/')
+        window.location.assign('/planazo-front/')
 
     })
     .catch( error => console.log(error) )
@@ -41,7 +41,7 @@ class Login extends Component {
           
           <input type="submit" value="Login" />
           <p className="redirect-auth">Don't have an account? 
-            <Link to={"/signup"}> Signup here.</Link>
+            <Link to={"/planazo-front/signup"}> Signup here.</Link>
           </p>
         </form>
       </div>

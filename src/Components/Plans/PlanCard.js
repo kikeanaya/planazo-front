@@ -65,11 +65,11 @@ class PlanCard extends Component {
             return (
                 <div className="plan-card">
                     <div className="main-title-container">
-                        <Link to={`/plans/${this.props._id}`}><p className="plan-title">{this.props.title}</p></Link>
+                        <Link to={`/planazo-front/plans/${this.props._id}`}><p className="plan-title">{this.props.title}</p></Link>
                     </div>
 
                     <div className="plan-image-container">
-                        <Link to={`/plans/${this.props._id}`}><img className="plan-image-in-list" src={this.props.imagesUrls[0]} alt={this.props.title}/></Link>
+                        <Link to={`/planazo-front/plans/${this.props._id}`}><img className="plan-image-in-list" src={this.props.imagesUrls[0]} alt={this.props.title}/></Link>
                     </div>
 
                     <div className="plan-footer">
@@ -113,18 +113,18 @@ class PlanCard extends Component {
             return (
                 <div className="plan-card">
                     <div className="main-title-container">
-                        <Link to={`/plans/${this.props._id}`}>
+                        <Link to={`/planazo-front/plans/${this.props._id}`}>
                             <p className="plan-title">{this.props.title}</p>
                         </Link> 
                     </div>
 
                     <div className="plan-image-container">
-                        <Link to={`/plans/${this.props._id}`}><img className="plan-image-in-list" src={this.props.imagesUrls[0]} alt={this.props.title}/></Link>
+                        <Link to={`/planazo-front/plans/${this.props._id}`}><img className="plan-image-in-list" src={this.props.imagesUrls[0]} alt={this.props.title}/></Link>
                     </div>
 
                     <div className="plan-footer">
                         
-                        <Link to={`/login`}><button className="empty-heart" onClick={(e) => this.increaseLikes(this.props._id)}></button></Link>
+                        <Link to={`/planazo-front/login`}><button className="empty-heart" onClick={(e) => this.increaseLikes(this.props._id)}></button></Link>
                         
                         <div className="plan-info-container">
                             <p className="likes-counter">{`${this.props.likes} likes `}</p>

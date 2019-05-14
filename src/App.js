@@ -40,13 +40,16 @@ class App extends Component {
         <Navbar userInSession={this.state.loggedInUser} />
         <header className="App-header">
           <Switch>
-            <Route exact path='/' render={() => <PlanList userInSession={this.state.loggedInUser} setUser={this.setTheUser}/>}/>
-            <Route exact path='/signup' render={() => <Signup setUser={this.setTheUser}/>}/>
-            <Route exact path='/login' render={() => <Login setUser={this.setTheUser}/>}/>
-            <Route exact path="/plans/:id" component={PlanDetails} />
+            <Route exact path='/planazo-front/' render={() => <PlanList userInSession={this.state.loggedInUser} setUser={this.setTheUser}/>}/>
+            <Route exact path='/planazo-front/signup' render={() => <Signup setUser={this.setTheUser}/>}/>
+            <Route exact path='/planazo-front/login' render={() => <Login setUser={this.setTheUser}/>}/>
+            <Route exact path="/planazo-front/plans/:id" component={PlanDetails} />
           </Switch>
         </header>
         <Footbar/>
+        <div className="view-alert">
+          <p>View this website on mobile for a better experience </p>
+        </div>
       </div>
     )
 
@@ -56,10 +59,10 @@ class App extends Component {
           <Navbar userInSession={this.state.loggedInUser} setUser={this.setTheUser} />
           <header className="App-header">
             <Switch>
-              <Route exact path='/' render={() => <PlanList userInSession={this.state.loggedInUser} setUser={this.setTheUser}/>}/>
-              <Route exact path='/signup' render={() => <Signup setUser={this.setTheUser}/>}/>
-              <Route exact path='/login' render={() => <Login setUser={this.setTheUser}/>}/>
-              <Route exact path="/plans/:id" component={PlanDetails} />
+              <Route exact path='/planazo-front/' render={() => <PlanList userInSession={this.state.loggedInUser} setUser={this.setTheUser}/>}/>
+              <Route exact path='/planazo-front/signup' render={() => <Signup setUser={this.setTheUser}/>}/>
+              <Route exact path='/planazo-front/login' render={() => <Login setUser={this.setTheUser}/>}/>
+              <Route exact path="/planazo-front/plans/:id" component={PlanDetails} />
             </Switch>
           </header>
           <Footbar/>

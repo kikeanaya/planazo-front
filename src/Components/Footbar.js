@@ -16,7 +16,7 @@ class Footbar extends Component {
         return(   
             <div className="footer-style">
               <button className="profile-button"></button>
-              <Link to="/"><button className="home-button"></button></Link>
+              <Link to="/planazo-front/"><button className="home-button"></button></Link>
             </div>
         )
         

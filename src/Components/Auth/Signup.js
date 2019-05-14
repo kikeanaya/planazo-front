@@ -40,7 +40,7 @@ class Signup extends Component {
           
           <input type="submit" value="Signup" />
           <p className="redirect-auth">Already have an account? 
-            <Link to={"/login"}> Login here.</Link>
+            <Link to={"/planazo-front/login"}> Login here.</Link>
           </p>
         </form>
       </div>
