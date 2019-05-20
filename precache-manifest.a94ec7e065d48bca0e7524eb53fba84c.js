@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "5658632383a1c918f6e4",
-    "url": "/planazo-front/static/css/main.98103ffb.chunk.css"
+    "revision": "01f52a1eeb6416d9347b",
+    "url": "/planazo-front/static/css/main.b5369d68.chunk.css"
   },
   {
-    "revision": "5658632383a1c918f6e4",
+    "revision": "01f52a1eeb6416d9347b",
     "url": "/planazo-front/static/js/main.0472ef8d.chunk.js"
   },
   {
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/planazo.5896f1a1.png"
   },
   {
-    "revision": "ed718a5fe4c2c476c20d3e21a9f22868",
-    "url": "/planazo-front/static/media/plus.ed718a5f.svg"
-  },
-  {
     "revision": "4e1ac616507764a8aba846521a43f3f1",
     "url": "/planazo-front/static/media/play-button.4e1ac616.svg"
+  },
+  {
+    "revision": "ed718a5fe4c2c476c20d3e21a9f22868",
+    "url": "/planazo-front/static/media/plus.ed718a5f.svg"
   },
   {
     "revision": "d654ce194e0660d047d6913124f8d562",
@@ -40,20 +40,12 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/emptyheart.12aa4dc6.svg"
   },
   {
-    "revision": "325d33ea9594c7d7b29f65772b7f273f",
-    "url": "/planazo-front/static/media/login.325d33ea.svg"
-  },
-  {
-    "revision": "6e32f1de273f7d843aab0d3725e40fa1",
-    "url": "/planazo-front/static/media/logout.6e32f1de.svg"
-  },
-  {
     "revision": "445abfc59ed4db25bb9f34a6bab8ca88",
     "url": "/planazo-front/static/media/next.445abfc5.svg"
   },
   {
-    "revision": "6867dc1d8c3f290c147c21b885e73fd2",
-    "url": "/planazo-front/static/media/previous.6867dc1d.svg"
+    "revision": "6e32f1de273f7d843aab0d3725e40fa1",
+    "url": "/planazo-front/static/media/logout.6e32f1de.svg"
   },
   {
     "revision": "625b6e018904b734004cd2e5187f2a41",
@@ -62,6 +54,14 @@ self.__precacheManifest = [
   {
     "revision": "133ce3f86906cf46c6618abb24212cfe",
     "url": "/planazo-front/static/media/home.133ce3f8.svg"
+  },
+  {
+    "revision": "325d33ea9594c7d7b29f65772b7f273f",
+    "url": "/planazo-front/static/media/login.325d33ea.svg"
+  },
+  {
+    "revision": "6867dc1d8c3f290c147c21b885e73fd2",
+    "url": "/planazo-front/static/media/previous.6867dc1d.svg"
   },
   {
     "revision": "4701f9dc466e929f590c1c318a6aa387",
@@ -76,20 +76,20 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/down.ca324073.svg"
   },
   {
-    "revision": "f3f3a7eaffefa053a3da3fd19c4c5d31",
-    "url": "/planazo-front/static/media/natureactive.f3f3a7ea.png"
-  },
-  {
-    "revision": "14b4b4e46fb0378d5fa9088e76cf6b15",
-    "url": "/planazo-front/static/media/nature.14b4b4e4.png"
-  },
-  {
     "revision": "80d4374cd3493e1b9bb7a314f945ffa7",
     "url": "/planazo-front/static/media/drinks.80d4374c.png"
   },
   {
+    "revision": "f3f3a7eaffefa053a3da3fd19c4c5d31",
+    "url": "/planazo-front/static/media/natureactive.f3f3a7ea.png"
+  },
+  {
     "revision": "3f5db81201d8ace2ad3855265a86eda8",
     "url": "/planazo-front/static/media/drinksactive.3f5db812.png"
+  },
+  {
+    "revision": "14b4b4e46fb0378d5fa9088e76cf6b15",
+    "url": "/planazo-front/static/media/nature.14b4b4e4.png"
   },
   {
     "revision": "63bb0a66ac0200bd74ddedc12feca2a3",
@@ -100,12 +100,12 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/foodactive.b4662224.png"
   },
   {
-    "revision": "2276069c0e2dd535bdd458fc4c7a7252",
-    "url": "/planazo-front/static/media/romanticactive.2276069c.png"
-  },
-  {
     "revision": "ef6cb71ec2b0f9d6b275a133f9e8c588",
     "url": "/planazo-front/static/media/shoppingactive.ef6cb71e.png"
+  },
+  {
+    "revision": "2276069c0e2dd535bdd458fc4c7a7252",
+    "url": "/planazo-front/static/media/romanticactive.2276069c.png"
   },
   {
     "revision": "897bcd0694b8bae9117ae51048f9eec7",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/UploadIcon.1cedb6e9.svg"
   },
   {
-    "revision": "83b337030849c3d8cf9882675f0c368f",
+    "revision": "81d6855f0adf8bdcd94d501a019c66c4",
     "url": "/planazo-front/index.html"
   }
 ];
