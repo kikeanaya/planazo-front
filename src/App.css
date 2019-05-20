@@ -495,6 +495,7 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   font-family: Roboto;
+  margin-bottom: 50px;
 }
 
 .plan-card{
