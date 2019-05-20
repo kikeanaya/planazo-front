@@ -20,7 +20,7 @@ button:focus {
 .app-title {
   font-family: 'Patrick Hand';
   margin: 0;
-  padding: 12px 10px 0px 5px;
+  padding: 10px 10px 0px 5px;
 }
 
 
@@ -719,10 +719,10 @@ button:focus {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  height: 30px;
-  width: 30px;
-  margin-top: 10px;
-  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  margin-top: 15px;
+  margin-right: 20px;
   margin-left: auto;
 }
 
@@ -936,18 +936,20 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 .open-sort-menu{
-  background-color: initial;
+  background-color: white;
   background-image: url('Images/settings.svg');
-  background-size: cover;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
   color: white;
   border: none;
   position: fixed;
   right: 20px;
   bottom: 60px;
-  height:4vh;
-  width: 4vh;
+  height: 30px;
+  width: 30px;
   padding: 10px;
-  object-fit: cover;
   text-align: left;
 }
 
