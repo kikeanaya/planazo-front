@@ -25,11 +25,11 @@ class App extends Component {
   }
 
   fetchUser() {
-    // if (this.state.loggedInUser === null) {
-    //   this.authService.loggedin()
-    //     .then(response => this.setState({ loggedInUser: response }))
-    //     .catch(x => this.setState({ loggedInUser: false }))
-    // }
+    if (this.state.loggedInUser === null) {
+      this.authService.loggedin()
+        .then(response => this.setState({ loggedInUser: response }))
+        .catch(x => this.setState({ loggedInUser: false }))
+    }
   }
   
   render() {
