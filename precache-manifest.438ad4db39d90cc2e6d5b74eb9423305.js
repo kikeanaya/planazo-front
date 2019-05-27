@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f3c803ee2f4902a39ead",
-    "url": "/planazo-front/static/css/main.b5369d68.chunk.css"
+    "revision": "f8cde3e8087a272b2a25",
+    "url": "/planazo-front/static/css/main.a316ec8e.chunk.css"
   },
   {
-    "revision": "f3c803ee2f4902a39ead",
-    "url": "/planazo-front/static/js/main.95a2bff9.chunk.js"
+    "revision": "f8cde3e8087a272b2a25",
+    "url": "/planazo-front/static/js/main.e32b3186.chunk.js"
   },
   {
     "revision": "68607700c0a726a0835c",
@@ -24,36 +24,16 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/planazo.5896f1a1.png"
   },
   {
-    "revision": "ed718a5fe4c2c476c20d3e21a9f22868",
-    "url": "/planazo-front/static/media/plus.ed718a5f.svg"
-  },
-  {
     "revision": "4e1ac616507764a8aba846521a43f3f1",
     "url": "/planazo-front/static/media/play-button.4e1ac616.svg"
-  },
-  {
-    "revision": "d654ce194e0660d047d6913124f8d562",
-    "url": "/planazo-front/static/media/like.d654ce19.svg"
   },
   {
     "revision": "12aa4dc66b33df416cd41b95c3597c30",
     "url": "/planazo-front/static/media/emptyheart.12aa4dc6.svg"
   },
   {
-    "revision": "6e32f1de273f7d843aab0d3725e40fa1",
-    "url": "/planazo-front/static/media/logout.6e32f1de.svg"
-  },
-  {
-    "revision": "4701f9dc466e929f590c1c318a6aa387",
-    "url": "/planazo-front/static/media/settings.4701f9dc.svg"
-  },
-  {
-    "revision": "325d33ea9594c7d7b29f65772b7f273f",
-    "url": "/planazo-front/static/media/login.325d33ea.svg"
-  },
-  {
-    "revision": "625b6e018904b734004cd2e5187f2a41",
-    "url": "/planazo-front/static/media/profile.625b6e01.svg"
+    "revision": "d654ce194e0660d047d6913124f8d562",
+    "url": "/planazo-front/static/media/like.d654ce19.svg"
   },
   {
     "revision": "445abfc59ed4db25bb9f34a6bab8ca88",
@@ -64,20 +44,36 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/home.133ce3f8.svg"
   },
   {
-    "revision": "6867dc1d8c3f290c147c21b885e73fd2",
-    "url": "/planazo-front/static/media/previous.6867dc1d.svg"
+    "revision": "6e32f1de273f7d843aab0d3725e40fa1",
+    "url": "/planazo-front/static/media/logout.6e32f1de.svg"
+  },
+  {
+    "revision": "325d33ea9594c7d7b29f65772b7f273f",
+    "url": "/planazo-front/static/media/login.325d33ea.svg"
+  },
+  {
+    "revision": "625b6e018904b734004cd2e5187f2a41",
+    "url": "/planazo-front/static/media/profile.625b6e01.svg"
   },
   {
     "revision": "ff0d4584b97691e482e4eb5158cd074d",
     "url": "/planazo-front/static/media/up.ff0d4584.svg"
   },
   {
+    "revision": "ed718a5fe4c2c476c20d3e21a9f22868",
+    "url": "/planazo-front/static/media/plus.ed718a5f.svg"
+  },
+  {
     "revision": "ca3240730c93582bd3d0fca2ba9b63b8",
     "url": "/planazo-front/static/media/down.ca324073.svg"
   },
   {
-    "revision": "14b4b4e46fb0378d5fa9088e76cf6b15",
-    "url": "/planazo-front/static/media/nature.14b4b4e4.png"
+    "revision": "6867dc1d8c3f290c147c21b885e73fd2",
+    "url": "/planazo-front/static/media/previous.6867dc1d.svg"
+  },
+  {
+    "revision": "4701f9dc466e929f590c1c318a6aa387",
+    "url": "/planazo-front/static/media/settings.4701f9dc.svg"
   },
   {
     "revision": "3f5db81201d8ace2ad3855265a86eda8",
@@ -92,12 +88,16 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/drinks.80d4374c.png"
   },
   {
-    "revision": "63bb0a66ac0200bd74ddedc12feca2a3",
-    "url": "/planazo-front/static/media/food.63bb0a66.png"
+    "revision": "14b4b4e46fb0378d5fa9088e76cf6b15",
+    "url": "/planazo-front/static/media/nature.14b4b4e4.png"
   },
   {
     "revision": "b4662224e9070218d4b4991608b85098",
     "url": "/planazo-front/static/media/foodactive.b4662224.png"
+  },
+  {
+    "revision": "63bb0a66ac0200bd74ddedc12feca2a3",
+    "url": "/planazo-front/static/media/food.63bb0a66.png"
   },
   {
     "revision": "2276069c0e2dd535bdd458fc4c7a7252",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "/planazo-front/static/media/UploadIcon.1cedb6e9.svg"
   },
   {
-    "revision": "238c4c2fd8a33f61ebc7006b19ad4ff2",
+    "revision": "6c2d185034eca5f45b9b525300266229",
     "url": "/planazo-front/index.html"
   }
 ];
