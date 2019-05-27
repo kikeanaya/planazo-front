@@ -41,7 +41,8 @@ class PlansList extends Component {
         this.state = {
             modalIsOpen: false,
             plans: [],
-            loggedInUser: null
+            loggedInUser: null,
+            loading: true
         }
 
         this.services = new PlanService()
@@ -53,7 +54,8 @@ class PlansList extends Component {
         return this.services.getAllPlans()
             .then(data => {
                 this.setState({
-                    plans: data
+                    plans: data,
+                    loading: false
                 })
             })
     }
@@ -208,63 +210,76 @@ class PlansList extends Component {
 
     render() {
         if (this.state.loggedInUser) {
-        return (
-            <div className="container">
-                <div className="filters-container">
-                    <button className="nav-element-beer" onClick={e => this.filterByCategory("drinks", e)}></button>
-                    <button className="nav-element-leaf" onClick={(e) => this.filterByCategory("nature", e)}></button>
-                    <button className="nav-element-disco" onClick={(e) => this.filterByCategory("party", e)}></button>
-                    <button className="nav-element-pets" onClick={(e) => this.filterByCategory("pets", e)}></button>
-                    <button className="nav-element-football" onClick={(e) => this.filterByCategory("sports", e)}></button>
-                    <button className="nav-element-shopping" onClick={(e) => this.filterByCategory("shopping", e)}></button>
-                    <button className="nav-element-tray" onClick={(e) => this.filterByCategory("food", e)}></button>
-                    <button className="nav-element-romantic" onClick={(e) => this.filterByCategory("romantic", e)}></button>
-                </div>
-                <PlanForm getAllPlans={this.getAllPlans} userInSession={this.state.loggedInUser} setUser={this.setTheUser} />
-                <div className="plan-list">
-                    {
-                        this.state.plans.map(plan => <PlanCard key={plan._id} {...plan} loggedInUser={this.state.loggedInUser} refreshPlans={this.getAllPlans}/>)
-                    }
-                </div>
-                <div>
-                        <button onClick={this.openModal} className="open-sort-menu"></button>
-                        <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyles}>
-                        <p>Sort By:</p>
-                        <div className="sort-options-container">
-                            <div className="each-option-container">
-                                <p>Likes</p>
-                                <div className="sort-buttons-container">
-                                    <button onClick={this.sortByLikesUp} className="sort-button-up"></button>
-                                    <button onClick={this.sortByLikesDown} className="sort-button-down"></button>
-                                </div>
-                            </div>
-                            <div className="each-option-container">
-                                <p>Price</p>
-                                <div className="sort-buttons-container">
-                                    <button onClick={this.sortByPriceUp} className="sort-button-up"></button>
-                                    <button onClick={this.sortByPriceDown} className="sort-button-down"></button>
-                                </div>
-                            </div>
-                            <div className="each-option-container">
-                                <p>Duration</p>
-                                <div className="sort-buttons-container">
-                                    <button onClick={this.sortByPlanDurationUp} className="sort-button-up"></button>
-                                    <button onClick={this.sortByPlanDurationDown} className="sort-button-down"></button>
-                                </div>
-                            </div>
-                            <div className="each-option-container">
-                                <p>People</p>
-                                <div className="sort-buttons-container">
-                                    <button onClick={this.sortByPeopleUp} className="sort-button-up"></button>
-                                    <button onClick={this.sortByPeopleDown} className="sort-button-down"></button>
-                                </div>
-                            </div>
-                        </div>
-                        </Modal>
+            if (this.state.loading){
+                return(
+                    <div className="spinner"></div> 
+                )
+            }
+            else{
+            return (
+                <div className="container">
+                    <div className="filters-container">
+                        <button className="nav-element-beer" onClick={e => this.filterByCategory("drinks", e)}></button>
+                        <button className="nav-element-leaf" onClick={(e) => this.filterByCategory("nature", e)}></button>
+                        <button className="nav-element-disco" onClick={(e) => this.filterByCategory("party", e)}></button>
+                        <button className="nav-element-pets" onClick={(e) => this.filterByCategory("pets", e)}></button>
+                        <button className="nav-element-football" onClick={(e) => this.filterByCategory("sports", e)}></button>
+                        <button className="nav-element-shopping" onClick={(e) => this.filterByCategory("shopping", e)}></button>
+                        <button className="nav-element-tray" onClick={(e) => this.filterByCategory("food", e)}></button>
+                        <button className="nav-element-romantic" onClick={(e) => this.filterByCategory("romantic", e)}></button>
                     </div>
-            </div>
-        )
+                    <PlanForm getAllPlans={this.getAllPlans} userInSession={this.state.loggedInUser} setUser={this.setTheUser} />
+                    <div className="plan-list">
+                        {
+                            this.state.plans.map(plan => <PlanCard key={plan._id} {...plan} loggedInUser={this.state.loggedInUser} refreshPlans={this.getAllPlans}/>)
+                        }
+                    </div>
+                    <div>
+                            <button onClick={this.openModal} className="open-sort-menu"></button>
+                            <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyles}>
+                            <p>Sort By:</p>
+                            <div className="sort-options-container">
+                                <div className="each-option-container">
+                                    <p>Likes</p>
+                                    <div className="sort-buttons-container">
+                                        <button onClick={this.sortByLikesUp} className="sort-button-up"></button>
+                                        <button onClick={this.sortByLikesDown} className="sort-button-down"></button>
+                                    </div>
+                                </div>
+                                <div className="each-option-container">
+                                    <p>Price</p>
+                                    <div className="sort-buttons-container">
+                                        <button onClick={this.sortByPriceUp} className="sort-button-up"></button>
+                                        <button onClick={this.sortByPriceDown} className="sort-button-down"></button>
+                                    </div>
+                                </div>
+                                <div className="each-option-container">
+                                    <p>Duration</p>
+                                    <div className="sort-buttons-container">
+                                        <button onClick={this.sortByPlanDurationUp} className="sort-button-up"></button>
+                                        <button onClick={this.sortByPlanDurationDown} className="sort-button-down"></button>
+                                    </div>
+                                </div>
+                                <div className="each-option-container">
+                                    <p>People</p>
+                                    <div className="sort-buttons-container">
+                                        <button onClick={this.sortByPeopleUp} className="sort-button-up"></button>
+                                        <button onClick={this.sortByPeopleDown} className="sort-button-down"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            </Modal>
+                        </div>
+                </div>
+            )
+            }
         }else{
+            if (this.state.loading){
+                return(
+                    <div className="spinner"></div> 
+                )
+            }
+            else{
             return (
                 <div className="container">    
                     <div className="filters-container">
@@ -321,6 +336,7 @@ class PlansList extends Component {
 
                 </div>
             )
+            }
         }
     }
 }
