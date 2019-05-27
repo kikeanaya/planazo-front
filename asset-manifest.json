@@ -1,5 +1,5 @@
 {
-  "main.css": "/planazo-front/static/css/main.a316ec8e.chunk.css",
+  "main.css": "/planazo-front/static/css/main.2a453fea.chunk.css",
   "main.js": "/planazo-front/static/js/main.e32b3186.chunk.js",
   "main.js.map": "/planazo-front/static/js/main.e32b3186.chunk.js.map",
   "runtime~main.js": "/planazo-front/static/js/runtime~main.74798e51.js",
@@ -8,10 +8,10 @@
   "static/js/2.9b25371d.chunk.js": "/planazo-front/static/js/2.9b25371d.chunk.js",
   "static/js/2.9b25371d.chunk.js.map": "/planazo-front/static/js/2.9b25371d.chunk.js.map",
   "index.html": "/planazo-front/index.html",
-  "precache-manifest.438ad4db39d90cc2e6d5b74eb9423305.js": "/planazo-front/precache-manifest.438ad4db39d90cc2e6d5b74eb9423305.js",
+  "precache-manifest.f266df3fa502703a6409feb998ac9dc3.js": "/planazo-front/precache-manifest.f266df3fa502703a6409feb998ac9dc3.js",
   "service-worker.js": "/planazo-front/service-worker.js",
   "static/css/2.9d077f93.chunk.css.map": "/planazo-front/static/css/2.9d077f93.chunk.css.map",
-  "static/css/main.a316ec8e.chunk.css.map": "/planazo-front/static/css/main.a316ec8e.chunk.css.map",
+  "static/css/main.2a453fea.chunk.css.map": "/planazo-front/static/css/main.2a453fea.chunk.css.map",
   "static/media/UploadIcon.svg": "/planazo-front/static/media/UploadIcon.1cedb6e9.svg",
   "static/media/App.css": "/planazo-front/static/media/up.ff0d4584.svg",
   "static/media/planazo.png": "/planazo-front/static/media/planazo.5896f1a1.png"
